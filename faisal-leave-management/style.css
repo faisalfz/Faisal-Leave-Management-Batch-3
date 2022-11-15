@@ -1,0 +1,63 @@
+body {
+  margin: 0;
+  padding: 0 48px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.headerMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 48px;
+}
+
+.headerColumn1 {
+  display: flex;
+  align-items: center;
+}
+
+img.menuIcon {
+  margin-right: 12px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px 12px;
+}
+
+.headerColumn2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 0.17;
+}
+
+.headerColumn2 .btnOrgName {
+  font-size: 16px;
+  /* font-weight: 500; */
+  padding: 12px 20px;
+  border: none;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+}
+
+.userImgBtn {
+  display: flex;
+  align-items: center;
+}
+
+.headerColumn2 .userImgBtn .btnUser {
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+.headerColumn2 .userImgBtn img.userAvatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
