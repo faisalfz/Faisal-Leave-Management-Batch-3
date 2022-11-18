@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave Management</title>
+  <link rel="stylesheet" href="frame1.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+  <section class="headerMain">
+    <div class="headerColumn1">
+      <img src="/asset/menubar-icon.svg" class="menuIcon" alt="menu-icon">
+      <nav>
+        <a href="frame1.html">Summary</a>
+        <a href="#">Wall Chart</a>
+        <a href="#">My Leaves</a>
+        <a href="#">Help</a>
+      </nav>
+    </div>
+
+    <div class="headerColumn2">
+      <button class="btnOrgName">
+        Name of organization
+        <i class="fa-sharp fa-solid fa-caret-down"></i>
+      </button>
+      <i class="fa-solid fa-gear iconSetting"></i>
+      <i class="fa-regular fa-bell iconBell"></i>
+      <div class="userImgBtn">
+        <img src="/asset/CurrentUser.png" class="userAvatar" alt="user-avatar">
+        <button class="btnUser">
+          Momcilo
+          <i class="fa-sharp fa-solid fa-caret-down"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="summaryNextDays">
+    <div class="allLeavesColumn">
+      <h2 class="allLeavesTitle">Leaves Summary</h2>
+      <div class="allLeaves">
+        <div class="leave firstLeave">
+            <div class="whitePart">
+                <p class="leaveLabel ">Total employees</p>
+                <div class="secondRow">
+                    <span class="leaveTotal">1,409</span>
+                    <span class="iconPercent">
+                        <i class="fa-solid fa-arrow-trend-up leaveIcon"></i>
+                        <b class="leavePercent">23%</b>
+                    </span>
+                </div>
+            </div>
+
+            <div class="blackPart">
+                <p class="leaveMessage">13 applications need review</p>
+            </div>
+
+        </div>
+
+        <div class="leave secondLeave">
+            <div class="whitePart">
+                <p class="leaveLabel ">Total overtime</p>
+                <div class="secondRow">
+                    <span class="leaveTotal">569</span>
+                    <span class="iconPercent">
+                        <i class="fa-solid fa-arrow-trend-up leaveIcon"></i>
+                        <b class="leavePercent">13%</b>
+                    </span>
+                </div>
+            </div>
+
+            <div class="blackPart">
+                <p class="leaveMessage">103 overtime schedules need approval</p>
+            </div>
+
+        </div>
+
+
+        <div class="leave thirdLeave">
+            <div class="whitePart">
+                <p class="leaveLabel ">Total leave</p>
+                <div class="secondRow">
+                    <span class="leaveTotal">103</span>
+                    <span class="iconPercent">
+                        <i class="fa-solid fa-arrow-trend-down"></i>
+                        <b class="leavePercent">3%</b>
+                    </span>
+                </div>
+            </div>
+
+            <div class="blackPart">
+                <p class="leaveMessage">98 paid leave plans need approval</p>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="nextDaysColumn">
+      <h2 class="nextDaysTitle">In Next 7 Days</h2>
+      <div class="nextDays">
+        <!-- <div class="title">
+          <h2>In next 7 days</h2>
+        </div> -->
+  
+        <div class="date firstDate">
+          <p>Friday 02/11/2018</p>
+        </div>
+  
+        <div class="dateUsers firstDateUsers">
+          <div class="user user1">
+            <div class="col1">
+              <div class="userImg user1img">
+                <img src="/asset/User1.png" alt="user1 image" />
+              </div>
+  
+              <div class="nameTime">
+                <p class="userName">Momcilo Milijasevic</p>
+                <p class="timeRange">(All Day)</p>
+              </div>
+            </div>
+  
+            <div class="col2">
+              <p class="userStatus">Unpaid-Sick day</p>
+            </div>
+          </div>
+  
+          <div class="user user2">
+            <div class="col1">
+              <div class="userImg user1img">
+                <img src="/asset/User2.png" alt="user1 image" />
+              </div>
+  
+              <div class="nameTime">
+                <p class="userName">Momcilo Milijasevic</p>
+                <p class="timeRange">(12:40pm - 4pm)</p>
+              </div>
+            </div>
+  
+            <div class="col2">
+              <p class="userStatus">Paid-Sick day</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="date secondDate">
+          <p>Monday 05/11/2018</p>
+        </div>
+  
+        <div class="dateUsers secondDateUsers">
+          <div class="user user3">
+            <div class="col1">
+              <div class="userImg user3img">
+                <img src="/asset/User3.jpeg" alt="user3 image" />
+              </div>
+  
+              <div class="nameTime">
+                <p class="userName">Anybody Actually</p>
+                <p class="timeRange">(All Day)</p>
+              </div>
+            </div>
+  
+            <div class="col2">
+              <p class="userStatus">Unpaid-Sick day</p>
+            </div>
+          </div>
+  
+          <div class="user user4">
+            <div class="col1">
+              <div class="userImg user4img">
+                <img src="/asset/User4.png" alt="user4 image" />
+              </div>
+  
+              <div class="nameTime">
+                <p class="userName">Someone Here</p>
+                <p class="timeRange">(Add Day)</p>
+              </div>
+            </div>
+  
+            <div class="col2">
+              <p class="userStatus">Study Leave / Training</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  
+  <script
+      src="https://kit.fontawesome.com/9bdae0aadc.js"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>
