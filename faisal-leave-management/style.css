@@ -4,21 +4,33 @@
 
 html,
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   /* height: 100%; */
 }
 body {
   margin: 0;
-  padding: 0;
+  padding: 0px 48px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: white;
 }
+
+@media (width<768px) {
+  body {
+    margin: 0;
+    padding: 0px 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+  }
+}
+
 
 /* ------------------------------------------------- 
    Desktop Responsive CSS
   -------------------------------------------------
 */
 
+/*  Header Start 
+    -------------------  */
 @media (width>768px) {
   .headerMain {
     width: 100%;
@@ -29,7 +41,7 @@ body {
     flex-wrap: wrap;
     row-gap: 12px;
     align-items: center;
-    padding: 0px 50px;
+    /* padding: 0px 50px; */
     z-index: 10;
     background-color: white;
   }
@@ -79,7 +91,8 @@ body {
     font-weight: 600;
   }
 
-  .header-col2, .user-account-toggle {
+  .header-col2,
+  .user-account-toggle {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -98,7 +111,7 @@ body {
   select[name="org-name"] {
     max-width: 185px;
     font-size: 16px;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     border: none;
     padding: 12px 4px 12px 16px;
     border-radius: 25px;
@@ -107,7 +120,7 @@ body {
 
   select:focus {
     color: black;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     border: none;
   }
 
@@ -118,7 +131,6 @@ body {
     border: none;
     overflow: hidden;
   }
-
 }
 
 /* ***************************************************** */
@@ -211,7 +223,9 @@ body {
     border: none;
   }
 
-  .header-col1, .header-col2, .user-account-toggle {
+  .header-col1,
+  .header-col2,
+  .user-account-toggle {
     display: flex;
     align-items: center;
     gap: 24px;
@@ -228,7 +242,7 @@ body {
 
   select[name="org-name"] {
     width: 120px;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     border: none;
     padding: 8px 0px 8px 12px;
     border-radius: 25px;
@@ -237,7 +251,7 @@ body {
 
   select:focus {
     color: black;
-    background-color: #F5F5F5;
+    background-color: #f5f5f5;
     border: none;
   }
 
@@ -247,5 +261,213 @@ body {
     border: none;
     overflow: hidden;
   }
+}
 
+/*
+  Header End 
+  -------------------  */
+
+/* 
+    Section 1 CSS Start
+  */
+
+.section1 {
+  display: grid;
+  grid-template-columns: 65% 35%;
+  /* padding: 0px 50px; */
+}
+
+
+@media (width<=768px) {
+  .section1 {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 12px;
+    /* padding: 0px 50px; */
+  }
+}
+
+/* 
+  All leaves
+*/
+
+.leaves-summary-title {
+  margin-left: 15px;
+  margin-bottom: 40px;
+}
+
+.allLeaves {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* vertical-align: middle; */
+  /* padding: 50px 0px; */
+}
+
+.leave {
+  display: flex;
+  width: 33.33%;
+  margin: auto 15px;
+  flex-direction: column;
+  background-color: white;
+  border: 0px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.192);
+}
+
+.secondRow {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 8px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconPercent {
+  color: #24bbe6;
+}
+
+.blackPart {
+  min-height: 80px;
+  /* vertical-align: middle; */
+  color: white;
+  background-color: #353a46;
+  padding: 0px 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.leaveMessage {
+  /* width: 80%; */
+}
+
+.leaveLabel {
+  color: #7c7c7c;
+  font-weight: 500;
+}
+
+.whitePart {
+  padding: 15px 20px;
+  align-items: center;
+}
+
+.leaveTotal {
+  color: #353a46;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.thirdLeave .iconPercent {
+  color: #df2879;
+}
+
+/* -------------------------
+      Mobile Responsive CSS
+     --------------------------
+  */
+
+@media (width<=768px) {
+
+  .leaves-summary-title {
+    margin-bottom: 20px;
+  }
+
+  .allLeaves {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+    gap: 12px;
+    justify-content: space-between;
+    /* width: 100%; */
+    margin: 0 auto;
+    padding: 0;
+  }
+  .leave {
+    width: auto;
+    /* width: 100%; */
+    margin: auto 12px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .leaveMessage {
+    width: 100%;
+  } */
+}
+
+/*
+    Leave Stats End -------------------------------
+   */
+
+/* 
+    Next 7 Days Start
+   */
+
+.Section {
+  /* width: 500px; */
+  margin: 0 auto;
+  padding: 8px 30px 100px 30px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.title {
+  font-size: 16px;
+  border-bottom: 3px solid rgba(66, 66, 66, 0.116);
+}
+
+.date {
+  border-bottom: 3px solid rgba(66, 66, 66, 0.041);
+  font-size: 18px;
+  font-weight: 600;
+  color: #5e5e5e;
+}
+
+.dateUsers {
+  padding: 4px 0px;
+}
+
+.user {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+  padding: 4px 0;
+  font-weight: 600;
+}
+
+.col1 {
+  display: flex;
+  align-items: center;
+}
+
+.nameTime {
+  /* display: inline; */
+  font-size: 14px;
+  /* line-height: 6px; */
+}
+
+.timeRange,
+.userStatus {
+  color: rgb(94, 94, 94);
+  font-size: 14px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-right: 12px;
+}
+
+.col1 {
+  display: flex;
+  align-items: center;
+}
+
+.user4 {
+  opacity: 0.3;
 }
