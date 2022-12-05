@@ -17,7 +17,7 @@ body {
 @media (width<768px) {
   body {
     margin: 0;
-    padding: 0px 8px;
+    padding: 0px 8px 40px 8px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: white;
   }
@@ -41,7 +41,6 @@ body {
     flex-wrap: wrap;
     row-gap: 12px;
     align-items: center;
-    /* padding: 0px 50px; */
     z-index: 10;
     background-color: white;
   }
@@ -146,10 +145,8 @@ body {
     height: 60px;
     display: flex;
     justify-content: space-between;
-    /* position: fixed; */
     align-items: center;
     padding: 0px 50px 0px 0px;
-    /* border: 1px solid red; */
     z-index: 10;
     background-color: white;
   }
@@ -274,7 +271,6 @@ body {
 .section1 {
   display: grid;
   grid-template-columns: 65% 35%;
-  /* padding: 0px 50px; */
 }
 
 
@@ -283,7 +279,6 @@ body {
     display: grid;
     grid-template-columns: auto;
     row-gap: 12px;
-    /* padding: 0px 50px; */
   }
 }
 
@@ -300,8 +295,6 @@ body {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  /* vertical-align: middle; */
-  /* padding: 50px 0px; */
 }
 
 .leave {
@@ -329,7 +322,6 @@ body {
 
 .blackPart {
   min-height: 80px;
-  /* vertical-align: middle; */
   color: white;
   background-color: #353a46;
   padding: 0px 20px;
@@ -374,9 +366,6 @@ body {
   .allLeaves {
     display: grid;
     grid-template-columns: 50% 50%;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
     gap: 12px;
     justify-content: space-between;
     /* width: 100%; */
@@ -385,15 +374,10 @@ body {
   }
   .leave {
     width: auto;
-    /* width: 100%; */
     margin: auto 12px;
     display: flex;
     flex-direction: column;
   }
-
-  /* .leaveMessage {
-    width: 100%;
-  } */
 }
 
 /*
@@ -404,10 +388,10 @@ body {
     Next 7 Days Start
    */
 
-.Section {
+.column-next-7-day {
   /* width: 500px; */
   margin: 0 auto;
-  padding: 8px 30px 100px 30px;
+  padding: 8px 0px 0px 20px;
   background-color: white;
   border-radius: 4px;
 }
@@ -470,4 +454,193 @@ img {
 
 .user4 {
   opacity: 0.3;
+}
+
+/* 
+  Next 7 Days End 
+  Section 1 End --------------------------------
+*/
+
+/* ---------------------------------------
+  Section 2 Started
+  ----------------------------------------
+*/
+
+/* ------------------------------
+  Other Devices Responsive CSS
+  -------------------------------
+*/
+@media (width >768px) {
+
+  table.table-leave-request {
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 4px 8px; */
+    border-collapse: collapse;
+    border-spacing: 0px 20px;
+  }
+
+  h1.table-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .table-leave-request tr th {
+    text-align: start;
+    padding: 16px 16px;
+    border-bottom: 1px solid #CACAC9;
+    color: rgb(202, 202, 201);
+  }
+
+  td[data-label="Employee Name"] {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+  }
+
+  tr.leave-detail-row {
+    border-top: 2px solid #F3F3F3;
+    border-bottom: 2px solid #F3F3F3;
+  }
+
+  .leave-detail-row:hover {
+    background-color: #F3F3F3;
+    transition: .3s ease-in-out;
+    border: none; 
+  }  
+
+  .table-leave-request tr td {
+    padding: 24px 16px;
+  }
+
+  .three-buttons {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .three-buttons button {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  button#dissapprove {
+    background-color: transparent;
+    color: red;
+    border: none;
+  }
+
+  button#approve {
+    background-color: #00DE9C;
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+
+  button#more {
+    background-color: transparent;
+    border: none;
+    color: black;
+  }
+}
+
+/* Desktop CSS END ----------------------------------------------------------------------------------------------------------------
+   ****************************************************************************************************************************
+*/
+
+
+/* ------------------------------
+  Mobile Responsive CSS Start
+  -------------------------------
+*/
+
+@media (width <=768px) {
+  table.table-leave-request {
+    width: 100%;
+    padding: 4px 8px;
+    /* border-collapse: separate;
+    border-spacing: 0px 20px; */
+  }
+
+  h1.table-title {
+    font-size: 24px;
+    margin: 12px;
+  }
+
+  .table-leave-request tr th {
+    display: none;
+  }
+
+  .leave-detail-row {
+    display: block;
+    border: 1px solid;
+    margin-bottom: 28px;
+    border-radius: 4px;
+  }
+
+  .leave-detail-row:hover {
+    background-color: #F3F3F3;
+  }  
+
+  .table-leave-request tr td {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content: end;
+    border-bottom: 1px solid black;
+    padding: 16px 16px;
+  }
+
+  td[data-label="Employee Name"] {
+    font-weight: 600;
+  }
+
+  .table-leave-request tr td:last-child {
+    border-bottom: none;
+  }
+
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 0;
+    padding-left: 24px;
+    width: 50%;
+    text-align: left;
+  }
+
+  .three-buttons {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .three-buttons button {
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  button#dissapprove {
+    background-color: transparent;
+    color: red;
+    border: none;
+  }
+
+  button#approve {
+    background-color: #00DE9C;
+    padding: 8px 16px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+  }
+
+  button#more {
+    background-color: transparent;
+    border: none;
+    color: black;
+  }
 }
