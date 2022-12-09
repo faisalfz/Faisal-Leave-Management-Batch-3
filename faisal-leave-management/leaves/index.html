@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="/logout.png">
+    <link rel="stylesheet" href="style.css" />
+    <!-- <link rel="stylesheet" href="set.css" /> -->
+    <title>Leaves</title>
+  </head>
+
+  <body>
+    <div class="headerMain">
+      <div class="header-col1">
+        <img src="logo.png" alt="" class="logo" />
+        <input type="checkbox" id="openNavMenu" />
+        <label for="openNavMenu" class="NavMenuIcon">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav id="navMenu">
+          <ul class="menuItems">
+            <li><a href="#">Summary</a></li>
+            <li><a href="#">Wallchart</a></li>
+            <li><a href="#">My Leaves</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-col2">
+        <select name="org-name" id="org-name">
+          <option selected value="none">Select Organization</option>
+          <option value="Pseudosquare">Pseudosquare</option>
+          <option value="RankYard">RankYard</option>
+        </select>
+        <i class="fa-solid fa-gear iconSetting"></i>
+        <i class="fa-regular fa-bell iconBell"></i>
+        <div class="user-account-toggle">
+          <img src="CurrentUser.png" alt="" />
+          <select name="current-user" id="">
+            <option value="">Momcilo</option>
+            <option value="">Faisal</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <section class="section-leave">
+      <h2 class="mainTitle">Leaves</h2>
+
+      <div class="leaveAllTabs">
+        <div class="leaveTab leaveTab1">
+          <p class="leaveTabTitle leaveTabTitle1">All</p>
+        </div>
+
+        <div class="leaveTab leaveTab2">
+          <i class="fa-solid fa-xs fa-circle"></i>
+          <p class="leaveTabTitle leaveTabTitle2">Casual</p>
+        </div>
+
+        <div class="leaveTab leaveTab3">
+          <i class="fa-solid fa-xs fa-circle"></i>
+          <p class="leaveTabTitle leaveTabTitle3">Sick</p>
+        </div>
+      </div>
+
+      <p class="date date1">December 2020</p>
+
+      <div class="tabAllInboxData inbox1">
+        <div class="date1Column1">
+            <p class="leaveType">Half Day Application</p>
+            <p class="leaveDate">Wed, 16 Dec</p>
+            <p class="leaveReason casual">Casual</p>
+        </div>
+
+        <div class="date1Column2">
+          <p class="leaveStatus awaiting">Awaiting</p>
+          <i class="fa-solid fa-angle-right leaveIcon"></i>
+        </div>
+      </div>
+
+      <p class="date date2">November 2020</p>
+
+      <div class="tabAllInboxData inbox2">
+        <div class="date1Column1">
+          
+            <p class="leaveType">Full Day Application</p>
+            <p class="leaveDate">Mon, 28 Nov</p>
+            <p class="leaveReason sick">Sick</p>
+          
+        </div>
+
+        <div class="date1Column2">
+          <p class="leaveStatus approved">Approved</p>
+          <i class="fa-solid fa-angle-right leaveIcon"></i>
+        </div>
+      </div>
+
+      <div class="tabAllInboxData inbox3">
+        <div class="date1Column1">
+          
+            <p class="leaveType">3 Days Application</p>
+            <p class="leaveDate">Tue, 22 Nov - Fri, 25 Nov</p>
+            <p class="leaveReason casual">Casual</p>
+          
+        </div>
+
+        <div class="date1Column2">
+          <p class="leaveStatus declined">Declined</p>
+          <i class="fa-solid fa-angle-right leaveIcon"></i>
+        </div>
+      </div>
+
+      <div class="tabAllInboxData inbox4">
+        <div class="date1Column1">
+          
+            <p class="leaveType">Full Day Application</p>
+            <p class="leaveDate">Wed, 2 Nov</p>
+            <p class="leaveReason sick">Sick</p>
+          
+        </div>
+
+        <div class="date1Column2">
+          <p class="leaveStatus approved">Approved</p>
+          <i class="fa-solid fa-angle-right leaveIcon"></i>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/9bdae0aadc.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

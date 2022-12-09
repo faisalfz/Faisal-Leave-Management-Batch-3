@@ -70,7 +70,7 @@ body {
     font-weight: 600;
   }
 
-  nav#navMenu ul li:first-child {
+  nav#navMenu ul li:nth-child(2) {
     font-weight: 600;
   }
 
@@ -528,7 +528,7 @@ body {
     font-weight: 600;
   }
 
-  nav#navMenu ul li:first-child {
+  nav#navMenu ul li:nth-child(2) {
     font-weight: 600;
   }
 
@@ -1984,8 +1984,6 @@ body {
     gap: 20px;
   }
 
-  
-
   .user-account-toggle {
     gap: 4px;
   }
@@ -2469,8 +2467,6 @@ body {
     gap: 20px;
   }
 
-  
-
   .user-account-toggle {
     gap: 4px;
   }
@@ -2860,7 +2856,6 @@ body {
 
 /* Extra Small Mobile */
 @media (width < 280px) {
-  
   /* Header Start
   ----------------------- */
 
@@ -3344,5 +3339,4 @@ body {
 
   /* Main Section End
     ----------------------------------------------- */
-
-  }
+}
